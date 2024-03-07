@@ -19,8 +19,10 @@ return {
   -- Completion
   { "AstroNvim/astrocommunity", branch = "v4" },
   { import = "astrocommunity.completion.codeium-vim" },
-  { "AstroNvim/astrocommunity", branch = "v4" },
-  { import = "astrocommunity.completion.coq_nvim" },
+
+  --BUG: This plugin doesn't work for web-development. Remove this if you find some alternatives or use it if you are gonna work with python.
+  -- { "AstroNvim/astrocommunity", branch = "v4" },
+  -- { import = "astrocommunity.completion.coq_nvim" },
 
   -- Color
   { "AstroNvim/astrocommunity", branch = "v4" },
@@ -37,6 +39,9 @@ return {
   -- Diagnostics
   { "AstroNvim/astrocommunity", branch = "v4" },
   { import = "astrocommunity.diagnostics.lsp_lines-nvim" },
+
+  { "AstroNvim/astrocommunity", branch = "v4" },
+  { import = "astrocommunity.diagnostics.trouble-nvim" },
 
   -- Editing-support
   { "AstroNvim/astrocommunity", branch = "v4" },
@@ -62,6 +67,10 @@ return {
   { import = "astrocommunity.pack.tailwindcss" },
   { "AstroNvim/astrocommunity", branch = "v4" },
   { import = "astrocommunity.pack.typescript" },
+
+  --Project
+  { "AstroNvim/astrocommunity", branch = "v4" },
+  { import = "astrocommunity.project.nvim-spectre" },
 
   -- Recipes
 
