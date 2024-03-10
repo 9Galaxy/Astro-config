@@ -25,6 +25,7 @@ return {
   -- { import = "astrocommunity.completion.coq_nvim" },
 
   -- Color
+
   { "AstroNvim/astrocommunity", branch = "v4" },
   { import = "astrocommunity.color.ccc-nvim" },
 
