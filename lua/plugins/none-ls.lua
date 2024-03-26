@@ -28,9 +28,16 @@ return {
     -- Check supported formatters and linters
     -- https://github.com/nvimtools/none-ls.nvim/tree/main/lua/null-ls/builtins/formatting
     -- https://github.com/nvimtools/none-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
+    null_ls.setup {
+      null_ls = {
+        enabled = true,
+        name = "crates.nvim",
+      },
+    }
     config.sources = {
       -- Set a formatter
       null_ls.builtins.formatting.stylua,
+      null_ls.builtins.diagnostics.write_good,
       null_ls.builtins.formatting.prettier,
       null_ls.builtins.formatting.prettierd,
       null_ls.builtins.completion.spell,

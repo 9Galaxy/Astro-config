@@ -68,6 +68,8 @@ return {
   { import = "astrocommunity.pack.tailwindcss" },
   { "AstroNvim/astrocommunity", branch = "v4" },
   { import = "astrocommunity.pack.typescript" },
+  { "AstroNvim/astrocommunity", branch = "v4" },
+  { import = "astrocommunity.pack.toml" },
 
   --Project
   { "AstroNvim/astrocommunity", branch = "v4" },

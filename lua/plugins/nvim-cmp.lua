@@ -67,5 +67,12 @@ return {
         return kind
       end,
     },
+
+    sources = {
+      { name = "buffer" },
+      { name = "crates" },
+      { name = "nvim_lsp" },
+      { name = "path" },
+    },
   },
 }

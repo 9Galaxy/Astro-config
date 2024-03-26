@@ -42,7 +42,7 @@ return {
       -- end
     },
     -- enable servers that you already have installed without mason
-    servers = {
+    serverss = {
       -- "pyright"
     },
     -- customize language server configuration options passed to `lspconfig`
@@ -68,7 +68,7 @@ return {
         -- condition will be resolved for each client on each execution and if it ever fails for all clients,
         -- the auto commands will be deleted for that buffer
         cond = "textDocument/documentHighlight",
-        -- cond = function(client, bufnr) return client.name == "lua_ls" end,
+        -- tcond = function(client, bufnr) return client.name == "lua_ls" end,
         -- list of auto commands to set
         {
           -- events to trigger
@@ -88,6 +88,13 @@ return {
     mappings = {
       n = {
         gl = { function() vim.diagnostic.open_float() end, desc = "Hover diagnostics" },
+
+        -- Rust
+        ["<Leader>r"] = { desc = " Rust" },
+        -- Rust Code Action
+        ["<Leader>rc"] = { function() vim.cmd.RustLsp "codeAction" end, desc = "Code Action" },
+        -- Rust Upgrade Crates
+        ["<Leader>ru"] = { function() require "crates" end, desc = "Upgrade Crate" },
         -- a `cond` key can provided as the string of a server capability to be required to attach, or a function with `client` and `bufnr` parameters from the `on_attach` that returns a boolean
         -- gD = {
         --   function() vim.lsp.buf.declaration() end,

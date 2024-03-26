@@ -17,3 +17,9 @@ end
 
 require "lazy_setup"
 require "polish"
+
+-- Format on save for Markdown supported files (Neoformat)
+vim.api.nvim_create_autocmd({ "BufWritePre" }, {
+  pattern = { "*" },
+  callback = function() vim.cmd "Neoformat" end,
+})
