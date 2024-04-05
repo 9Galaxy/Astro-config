@@ -88,5 +88,9 @@ return {
   -- -- Testing
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.test.neotest" },
+
+  -- Utilities
+  "AstroNvim/astrocommunity",
+  { import = "astrocommunity.utility.noice-nvim" },
 }
 -- import/override with your plugins folder
